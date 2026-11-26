@@ -5,3 +5,12 @@ class Note:
 
     def afficher(self):
         return f"Matiere: {self.matiere}, Note: {self.valeur}"
+
+
+class GestionNotes:
+    def __init__(self):
+        self.notes = []
+
+    def ajouter_note(self, note):
+        self.notes.append(note)
+        print("Note ajoutee avec succes.")
