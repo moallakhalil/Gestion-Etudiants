@@ -23,3 +23,6 @@ class GestionEtudiants:
                 return
 
         print("Etudiant introuvable.")
+    def afficher_etudiants(self):
+        for etudiant in self.etudiants:
+            print(etudiant.afficher())
