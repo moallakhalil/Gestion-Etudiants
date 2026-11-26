@@ -14,3 +14,6 @@ class GestionNotes:
     def ajouter_note(self, note):
         self.notes.append(note)
         print("Note ajoutee avec succes.")
+    def afficher_notes(self):
+        for note in self.notes:
+            print(note.afficher())
