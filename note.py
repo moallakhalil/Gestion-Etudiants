@@ -17,3 +17,9 @@ class GestionNotes:
     def afficher_notes(self):
         for note in self.notes:
             print(note.afficher())
+    def calculer_moyenne(self):
+        if not self.notes:
+            return 0
+
+        total = sum(note.valeur for note in self.notes)
+        return total / len(self.notes)
